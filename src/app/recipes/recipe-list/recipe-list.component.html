@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 m-1">
+            <button class="btn btn-dark">New Recipe</button>
+        </div>
+        <hr>
+        <div class="col-xs-12">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-start" *ngFor="let recipe of recipes">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">{{recipe.recipeName}}</div>
+                        {{recipe.recipeDescription}}
+                    </div>
+                    <img src="{{recipe.recipeImagePath}}" width="80px">
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

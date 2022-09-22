@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-shopping-list-edit></app-shopping-list-edit>
+        <hr>
+        
+        <div class="col-xs-12">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex" style="cursor: pointer" *ngFor="let ingredient of ingredients">
+                    <div class="ms-2 me-auto fw-bold" >{{ingredient.ingredientName}}
+                    </div>
+                    <div class="ms-auto">{{ingredient.ingredientAmount}}</div>
+                </li>
+               
+            </ul>
+        </div>
+        
+    </div>
+</div>
